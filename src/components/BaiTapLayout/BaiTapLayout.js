@@ -5,6 +5,7 @@ import BTHeader from './BTHeader'
 import BTListProduct from './BTListProduct'
 
 export default class BaiTapLayout extends Component {
+
     render() {
         return (
             <div>

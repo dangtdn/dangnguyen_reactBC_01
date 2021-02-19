@@ -7,6 +7,7 @@ import HandleEvent from './HandleEvent/HandleEvent';
 import DemoProps from './Props/DemoProps';
 import RenderWithMap from './RenderWithMap/RenderWithMap';
 import DemoState from './StateReact/DemoState';
+import DemoQLSP from './Props/DemoQLSP/DemoQLSP';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       {/* <DataBinding/> */}
       {/* <HandleEvent/> */}
       {/* <DemoProps/> */}
+      <DemoQLSP/>
       {/* <RenderWithMap/> */}
       {/* <DemoState/> */}
       {/* <BaiTapChonXe/> */}
