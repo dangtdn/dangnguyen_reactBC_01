@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import DemoSP from './DemoSP'
+import GioHang from './GioHang'
 
 export default class DemoQLSP extends Component {
 
@@ -137,36 +138,7 @@ export default class DemoQLSP extends Component {
         return (
             <div className='container'>
                 <h3 className='p-2'>DANH SÁCH SẢN PHẨM</h3>
-                <div className='table'>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Mã SP</th>
-                                <th>Tên SP</th>
-                                <th>Hình ảnh</th>
-                                <th>Giá SP</th>
-                                <th>Số lượng</th>
-                                <th>Thành tiền</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {this.state.gioHang.map((sp,index) => {
-                                return <tr>
-                                        <td>{sp.maSP}</td>
-                                        <td>{sp.tenSP}</td>
-                                        <td>{sp.hinhAnh}</td>
-                                        <td>{sp.giaBan}</td>
-                                        <td>{sp.soLuong}</td>
-                                        <td>{sp.giaBan * sp.soLuong}</td>
-                                        <td><button className='btn btn-danger' onClick={() => {
-                                            this.xoaGioHang(sp)
-                                        }}>Delete</button></td>
-                                    </tr>
-                            })}
-                        </tbody>
-                    </table>
-                </div>
+                <GioHang gioHang={this.state.gioHang} xoaGioHang={this.xoaGioHang}/>
                 <div className='row'>
                     {this.renderSanPham()}
                 </div>
