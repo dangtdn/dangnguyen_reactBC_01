@@ -17,11 +17,11 @@ function App() {
       {/* <DataBinding/> */}
       {/* <HandleEvent/> */}
       {/* <DemoProps/> */}
-      {/* <DemoQLSP/> */}
+      <DemoQLSP/>
       {/* <RenderWithMap/> */}
       {/* <DemoState/> */}
       {/* <BaiTapChonXe/> */}
-      <BTGioHang/>
+      {/* <BTGioHang/> */}
     </div>
   );
 }

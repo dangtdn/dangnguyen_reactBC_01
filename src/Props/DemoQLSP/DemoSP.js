@@ -12,7 +12,7 @@ export default class DemoSP extends Component {
                     <p className="card-text">Giá: {giaBan}đ</p>
                     <div className='d-flex'>
                         <button onClick={() => { this.props.xemChiTiet(this.props.sanPham) }} className="btn btn-primary">Detail</button>
-                        <button className="btn btn-danger ml-3">Cart</button>
+                        <button onClick={() => {this.props.themGioHang(this.props.sanPham)}} className="btn btn-danger ml-3">Thêm</button>
                     </div>
                 </div>
             </div>
