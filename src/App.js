@@ -9,6 +9,7 @@ import RenderWithMap from './RenderWithMap/RenderWithMap';
 import DemoState from './StateReact/DemoState';
 import DemoQLSP from './Props/DemoQLSP/DemoQLSP';
 import BTGioHang from './Props/BTGioHang/BTGioHang';
+import BTGioHangRedux from './DemoRedux/BTGioHangRedux.js/BTGioHangRedux';
 
 function App() {
   return (
@@ -17,11 +18,12 @@ function App() {
       {/* <DataBinding/> */}
       {/* <HandleEvent/> */}
       {/* <DemoProps/> */}
-      <DemoQLSP/>
+      {/* <DemoQLSP/> */}
       {/* <RenderWithMap/> */}
       {/* <DemoState/> */}
       {/* <BaiTapChonXe/> */}
       {/* <BTGioHang/> */}
+      <BTGioHangRedux/>
     </div>
   );
 }
