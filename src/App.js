@@ -10,6 +10,7 @@ import DemoState from './StateReact/DemoState';
 import DemoQLSP from './Props/DemoQLSP/DemoQLSP';
 import BTGioHang from './Props/BTGioHang/BTGioHang';
 import BTGioHangRedux from './DemoRedux/BTGioHangRedux.js/BTGioHangRedux';
+import BaiTapGameXucXac from './DemoRedux/BTGioHangRedux.js/BaiTapGameXucXac/BaiTapGameXucXac';
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
       {/* <DemoState/> */}
       {/* <BaiTapChonXe/> */}
       {/* <BTGioHang/> */}
-      <BTGioHangRedux/>
+      {/* <BTGioHangRedux/> */}
+      <BaiTapGameXucXac/>
     </div>
   );
 }
