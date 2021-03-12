@@ -31,30 +31,29 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        playGame: (banChon) => {
-            // let count = 0;
-            // const random = setInterval(() => {
-            //     const action = {
-            //         type: 'PLAY_GAME',
-            //         banChon
-            //     }
+        playGame: () => {
+            let count = 0;
+            const random = setInterval(() => {
+                const action = {
+                    type: 'PLAY_GAME'
+                }
     
-            //     dispatch(action)
-            //     count++;
+                dispatch(action)
+                count++;
 
-            // if(count>10){
-            //     clearInterval(random);
-            //     dispatch(
-            //         {type: 'END_GAME'}
-            //     )
-            // }
-            // }, 100)
-            const action = {
-                type: 'PLAY_GAME',
-                banChon
+            if(count>10){
+                clearInterval(random);
+                dispatch(
+                    {type: 'END_GAME'}
+                )
             }
+            }, 100)
+            // const action = {
+            //     type: 'PLAY_GAME',
+            //     banChon
+            // }
 
-            dispatch(action)
+            // dispatch(action)
         }
     }
 }
